@@ -50,7 +50,7 @@ effectiveness Fire Water = Ineffective
 effectiveness Fire Rock = Ineffective
 effectiveness Fire Ice = Effective
 effectiveness Fire Bug = Effective
-effectiveness Fire Steel = Ineffective
+effectiveness Fire Steel = Effective
 effectiveness Fire Dragon = Ineffective
 
 effectiveness Water Fire = Effective
@@ -62,9 +62,7 @@ effectiveness Water Dragon = Ineffective
 
 effectiveness Electric Water = Effective
 effectiveness Electric Flying = Effective
-effectiveness Electric Steel = Effective
 effectiveness Electric Grass = Ineffective
-effectiveness Electric Electric = Ineffective
 effectiveness Electric Dragon = Ineffective
 effectiveness Electric Ground = Immune
 
@@ -83,7 +81,6 @@ effectiveness Grass Dragon = Ineffective
 effectiveness Ice Grass = Effective
 effectiveness Ice Fire = Ineffective
 effectiveness Ice Water = Ineffective
-effectiveness Ice Ice = Ineffective
 effectiveness Ice Ground = Effective
 effectiveness Ice Flying = Effective
 effectiveness Ice Dragon = Effective
@@ -113,7 +110,7 @@ effectiveness Ground Fire = Effective
 effectiveness Ground Electric = Effective
 effectiveness Ground Poison = Effective
 effectiveness Ground Rock = Ineffective
-effectiveness Ground Steel = Ineffective
+effectiveness Ground Steel = Effective
 effectiveness Ground Flying = Immune
 
 effectiveness Flying Grass = Effective
@@ -166,6 +163,8 @@ effectiveness Steel Ice = Effective
 effectiveness Steel Rock = Effective
 effectiveness Steel Fairy = Effective
 effectiveness Steel Steel = Ineffective
+effectiveness Steel Fire = Ineffective
+effectiveness Steel Water = Ineffective
 
 effectiveness Fairy Fighting = Effective
 effectiveness Fairy Bug = Effective

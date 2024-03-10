@@ -52,6 +52,21 @@ readIt "feu" = Fire
 readIt "glace" = Ice
 readIt "acier" = Steel
 readIt "plante" = Grass
+readIt "spectre" = Ghost
+readIt "tenebres" = Dark
+readIt "normal" = Normal
+readIt "electrique" = Electric
+readIt "eau" = Water
+readIt "plante" = Grass
+readIt "insecte" = Bug
+readIt "combat" = Fighting
+readIt "poison" = Poison
+readIt "sol" = Ground
+readIt "psy" = Psychic
+readIt "roche" = Rock
+readIt "dragon" = Dragon
+readIt "fee" = Fairy
+readIt "vol" = Flying
 readIt _ = error "Pas un type correct"
 
 imagesToDisplay :: MiniType -> MiniType -> IO Picture
@@ -76,17 +91,19 @@ main =
     in do
     -- fmap readIt <$>
     args <- getArgs
-    if | "n" `elem` args ->
+    if | "simulate" `elem` args ->
          mkLotsOfTournaments (read @Int (args!!1)) >>=
-           writeBarGraphSvgFile "tour_res.png" . fmap (\(x, y) -> (show x, y)) . toList
+           writeBarGraphSvgFile "tour_res.png" . fmap (Data.Bifunctor.first show) . toList
         -- mkLotsOfTournaments (read @Int (args!!1)) >>=
         -- toFile def "tour_res.png" . plot . fmap plotBars . bars (show <$> types) .
         --  fmap (\(x, y) -> (show x , [fromValue @Double (fromIntegral y) ])) . toList
+       | "markov" `elem` args ->
+         markovPrediction (readIt @Int (args!!1))
        | otherwise -> do
          itd <- imagesToDisplay (car (readIt <$> args)) (cadr (readIt <$> args))
          seed <- randomIO :: IO Int
          bg <- loadForest
-         let poko1 =  createGenericCreature (car (readIt <$> args))
+         let poko1 = createGenericCreature (car (readIt <$> args))
              poko2 = createGenericCreature (cadr (readIt <$> args))
            in do
             simulate window white steps (MiniMatch { ourPoke=poko1, themPoke=poko2, phase=Dealing, currAtt=Nothing, endPhase=False, randomSeed=mkStdGen seed })

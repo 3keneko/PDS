@@ -6,6 +6,7 @@ import Graphics.Gloss
 
 import MinimonTypes (MiniType(..))
 import Minimon ( Minimon(..) )
+import Data.Char (toLower)
 
 data WhichMinimon = Upper | Lower deriving Eq
 -- type Attacked = Bool
@@ -32,12 +33,7 @@ displayText x y l w = translate x y . scale l w . text
 
 
 minimonImg :: MiniType -> FilePath
-minimonImg Fire = "imgs/firekatchu.png"
-minimonImg Grass = "imgs/plantkatchu.png"
-minimonImg Steel = "imgs/steelkatchu.png"
-minimonImg Ice = "imgs/icekatchu.png"
-minimonImg _ = ""
-
+minimonImg typ = "imgs/" ++ map toLower (show typ) ++ ".png"
 
 displayMinimon :: Minimon -> WhichMinimon -> [Picture]
 displayMinimon (Minimon {..}) Upper

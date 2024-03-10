@@ -1,6 +1,6 @@
 {-# LANGUAGE ViewPatterns #-}
 module Markov (distributeMatches, markovPrediction, makeClearGraph, mkMatrix, mkRoundMatrix,
-              multALotPrint) where
+              multALotPrint, makeFirstGraph) where
 
 import Data.Graph.DGraph (DGraph, insertArcs, toArcsList)
 import Data.Graph.Types (Arc(..), empty, IsEdge (toTriple))
