@@ -1,19 +1,19 @@
 #!/usr/bin/env sh
 
 minimon() {
-    if [ "$1" == "n" ]; then
-        `cd minimon && stack run $1 $2 && xdg-open ~/minimon/tour_res.png`
+    if [ "$1" == "simulate" ]; then
+        `cd ~/pds/minimon/.stack-work/dist/x86_64-linux/ghc-9.6.4/build/minimon-exe && ./minimon-exe $1 $2 && xdg-open tour-res.png && cd -`
     else
-        `cd minimon && stack run $1 $2`
+        `cd ~/pds/minimon/.stack-work/dist/x86_64-linux/ghc-9.6.4/build/minimon-exe && ./minimon-exe $1 $2 && cd -`
     fi
 }
 
 music() {
-    `cd markovmusic && python3 genere_musique.py`
+    `python3 markovmusic/genere_musique.py $1 && timidity markovmusic/output.mid`
 }
 
 hmm() {
-    cd HMM/src && python3 main.py && cd -
+    python3 HMM/src/main.py
 }
 
 monopoly() {
