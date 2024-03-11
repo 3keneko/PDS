@@ -2,6 +2,7 @@
 module Main (main) where
 
 import Display (scaleAndTrans, minimonImg)
+import Markov (markovPrediction)
 
 import Graphics.Gloss
 import Graphics.Gloss.Juicy (loadJuicyPNG, loadJuicyJPG)
@@ -14,6 +15,7 @@ import MiniMatchShow (showModel)
 import MiniMatchUpdate (updateModel)
 import Simulation (mkLotsOfTournaments)
 import Data.Map (toList)
+import Data.Bifunctor
 import HappyHour (writeBarGraphSvgFile)
 -- import Graphics.Rendering.Chart.Backend.Cairo (FileOptions(..), toFile, renderableToFile)
 -- import Graphics.Rendering.Chart.Axis.Types (fromValue)
@@ -98,7 +100,7 @@ main =
         -- toFile def "tour_res.png" . plot . fmap plotBars . bars (show <$> types) .
         --  fmap (\(x, y) -> (show x , [fromValue @Double (fromIntegral y) ])) . toList
        | "markov" `elem` args ->
-         markovPrediction (readIt @Int (args!!1))
+         markovPrediction (read @Int (args!!1))
        | otherwise -> do
          itd <- imagesToDisplay (car (readIt <$> args)) (cadr (readIt <$> args))
          seed <- randomIO :: IO Int

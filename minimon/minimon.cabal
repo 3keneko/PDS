@@ -18,6 +18,25 @@ build-type:     Simple
 extra-source-files:
     README.md
     CHANGELOG.md
+    imgs/580b57fcd9996e24bc43c325.png
+    imgs/bug.png
+    imgs/dark.png
+    imgs/dragon.png
+    imgs/electric.png
+    imgs/fairy.png
+    imgs/fighting.png
+    imgs/fire.png
+    imgs/flying.png
+    imgs/ghost.png
+    imgs/ground.png
+    imgs/ice.png
+    imgs/normal.png
+    "imgs/pngimg.com - pokemon_PNG9.png"
+    imgs/poison.png
+    imgs/psy.png
+    imgs/rock.png
+    imgs/steel.png
+    imgs/water.png
 
 source-repository head
   type: git

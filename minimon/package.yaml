@@ -9,7 +9,7 @@ copyright:           "2024 Author name here"
 extra-source-files:
 - README.md
 - CHANGELOG.md
-
+- imgs/*png
 # Metadata used when publishing your package
 # synopsis:            Short description of your package
 # category:            Web

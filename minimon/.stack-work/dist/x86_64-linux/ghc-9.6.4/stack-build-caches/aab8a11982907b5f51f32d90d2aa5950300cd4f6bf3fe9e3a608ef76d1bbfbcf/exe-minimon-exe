@@ -1,0 +1,56 @@
+/home/mikeneko/.ghcup/ghc/9.6.4/lib/ghc-9.6.4/lib/x86_64-linux-ghc-9.6.4/rts-1.0.2/include/ghcversion.h:
+  hash: cbc0ab805e5b827180e3116cecd3f6665988df7f45a6b64f0e09ea8c25c438ff
+/home/mikeneko/pds/minimon/.stack-work/dist/x86_64-linux/ghc-9.6.4/build/minimon-exe/autogen/Paths_minimon.hs:
+  hash: 13c444523691bd0de3a780f48ed4a147741389c74f68682f4e3cc341dd79755f
+/home/mikeneko/pds/minimon/.stack-work/dist/x86_64-linux/ghc-9.6.4/build/minimon-exe/autogen/cabal_macros.h:
+  hash: 3b8a9a29219a9304c20dcedde3fb5e1ce24af36097435ec3423a6fddaad4e1d1
+/home/mikeneko/pds/minimon/CHANGELOG.md:
+  hash: a8d8c8002b56fedfec0e8f63d349f1b2215c64361742dd6f68360968c5afc88c
+/home/mikeneko/pds/minimon/README.md:
+  hash: 38a060cc4d48e96ea0e0205207917caa7faab5fdaeada0691cbb728639e7fef8
+/home/mikeneko/pds/minimon/app/Main.hs:
+  hash: 239268ee1cd038092cfbfa0c792331de21458a42ee4b8eb7b0da5f1328447dca
+/home/mikeneko/pds/minimon/imgs/580b57fcd9996e24bc43c325.png:
+  hash: 9719375f9bac9bad8f7cd3eb8ee5cc7c1679718a46b17b054fc6bf7fea137120
+/home/mikeneko/pds/minimon/imgs/bug.png:
+  hash: 1fc8bad5f06e3a8ff93a7630fcc10cef7c3ecb1e1b276f1b9bf014acfc8017eb
+/home/mikeneko/pds/minimon/imgs/dark.png:
+  hash: 12bfe22753ce82cbca384e55afa3efbf640416d62061d276aac489da0666a995
+/home/mikeneko/pds/minimon/imgs/dragon.png:
+  hash: ff2e415d2f4a78ab94ccbf39991626ed6b92697f83defb8744c3c5f236d74326
+/home/mikeneko/pds/minimon/imgs/electric.png:
+  hash: d8076d62b3cdbcff88b44d6313d975e808565e65107b3143ca6dd06b976d80ca
+/home/mikeneko/pds/minimon/imgs/fairy.png:
+  hash: 6e95e2ebf9eeb5d2f78c60aed909cd2fecd6326a82996821ca8b200373959037
+/home/mikeneko/pds/minimon/imgs/fighting.png:
+  hash: 45927a4ad6c3787e2375103069a34bc88a8a74cb8b12955df2b68464be272628
+/home/mikeneko/pds/minimon/imgs/fire.png:
+  hash: bac2890076448f2834bb0ff177a245d65c6b25831ac58b7f3980109952a9ce05
+/home/mikeneko/pds/minimon/imgs/flying.png:
+  hash: 37563e9b6cd2274a79f6d2bda349ff9b0911c005bbe8a19a6bfa5dc40db39e0d
+/home/mikeneko/pds/minimon/imgs/ghost.png:
+  hash: a78252fe2e23394fc4a770973c77a1bf253111b1b51c19b424565b17e4a032bd
+/home/mikeneko/pds/minimon/imgs/ground.png:
+  hash: ee8d22ab769017ce1206fce695fbac2dced7dafff4154e5dbb632d713f0afb78
+/home/mikeneko/pds/minimon/imgs/ice.png:
+  hash: b4a8f5dac2e7757252aa694421b9fd98e85e384f02912d1ce66da410a0fdbaf2
+/home/mikeneko/pds/minimon/imgs/normal.png:
+  hash: c3372603bd92ea9cc2edf4f9e33e8428d26706dd82036936fe79a4e08ce08059
+/home/mikeneko/pds/minimon/imgs/pngimg.com - pokemon_PNG9.png:
+  hash: 605c4b5682c1cec90a83d2ee4a09c8a9545a0d261ccbccc9088d4b94117bbb8c
+/home/mikeneko/pds/minimon/imgs/poison.png:
+  hash: 7f87a1a42d91de11577b80b92e60752d59b1c629e1a89496940b5b405af72616
+/home/mikeneko/pds/minimon/imgs/psy.png:
+  hash: bb20b8ab81302f64a6fbba266ee6c3d949d64f2e2292a2b490f62790b2775c26
+/home/mikeneko/pds/minimon/imgs/rock.png:
+  hash: 8a2c5fc85b395213ed3928f15369cc94fa5c41be0730ba1ed2cac6e5860836bd
+/home/mikeneko/pds/minimon/imgs/steel.png:
+  hash: bedd132d0722552b82db396f5d6ac77e8d052f4a19a9c0c3e861c8da072e41d0
+/home/mikeneko/pds/minimon/imgs/water.png:
+  hash: 67d3dc6a9704dd680d85394bd0bf0d5bf9c7ce5962456fedf7f9b10f80849e35
+/home/mikeneko/pds/minimon/minimon.cabal:
+  hash: 097546ac77c53b7477ca08323df0af996a3db63df189f8d317a6c6b32f49d42d
+/home/mikeneko/pds/minimon/package.yaml:
+  hash: 57e3f669acaa44777de186abe19e3d3547e88a15eeb535c7026b3751898ddc38
+/usr/include/stdc-predef.h:
+  hash: cb08cd5d4cc059a90833ac48a284d25016e8d56ded8ad4cd98d8ac59cc5053f3
