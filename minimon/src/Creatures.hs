@@ -22,7 +22,7 @@ nameIt _ = undefined
 createGenericHelp :: MiniType -> String -> String -> String -> String -> Minimon
 createGenericHelp typ att1 att2 att3 theName = Minimon { hp=300, minitype=typ,
                                 attacks=[
-                                    Attack { damage=15, number=10, the_type=Normal, attackName=att1 },
+                                    Attack { damage=15, number=10, the_type=typ, attackName=att1 },
                                     Attack { damage=15, number=15, the_type=typ, attackName=att2 },
                                     Attack { damage=30, number=5, the_type=typ, attackName=att3 }
                                 ],

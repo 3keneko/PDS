@@ -8,7 +8,7 @@ from PIL import Image
 #     BLUE = 2
 
 def convert_shirt_to_path(i: [int]) -> str:
-    return [ "../imgs/rouge.jpg", "../imgs/vert.jpg", "../imgs/bleu.jpeg" ][i[0]]
+    return [ "HMM/imgs/rouge.jpg", "HMM/imgs/vert.jpg", "HMM/imgs/bleu.jpeg" ][i[0]]
 
 def convert_to_img(i: [int]) -> Image:
     return Image.open(convert_shirt_to_path(i))
