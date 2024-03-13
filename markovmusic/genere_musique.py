@@ -123,7 +123,7 @@ def predict_next_state(chord:str, data:list=bigrams):
     # return random prediction
     return np.random.choice(options, p=probabilities)
 
-def generate_sequence(chord:str=None, data:list=bigrams, length:int=70):
+def generate_sequence(chord:str=None, data:list=bigrams, length:int=50):
     """Generate sequence of defined length."""
     # create list to store future chords
     chords = []
