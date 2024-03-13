@@ -16,7 +16,8 @@ class Humeur(Enum):
 # np.random.seed(42)
 
 def compute_state_probability(pred, probs):
-    return functools.reduce(lambda x, y: x*y, (map(lambda x, y: y[x.value], pred, probs)))
+    return functools.reduce(lambda x, y: x*y, (map(lambda x, y: y[x.value],
+                                              pred, probs)))
 
 # def compute_state_probability(pred, probs):
 #     return teacher_model.predict_proba(pred.reshape(1,-1))
