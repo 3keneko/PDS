@@ -7,10 +7,11 @@ from collections import OrderedDict
 # Utils
 from Constantes import *
 from Monopoly import Monopoly
+import monopoly.DataMonopoly as dataMonopoly
 # Interface
 from interface.scrollTk import scrollTk
 from interface.choixMonopoly import ChoixMonopoly
-from interface.parametres import Parametres
+from interface.parametres import Parametres_2
 from interface.statistiques import Statistiques
 from interface.viewMarkov import viewMarkov
 from interface.configTour import ConfigTour
@@ -117,7 +118,10 @@ class FenetrePrincipal(scrollTk):
         Permet de choisir le Monopoly que l'on veut simuler
     """
     def __choixMonopoly(self, event = None):
-        newDataMonopoly = self.__displayChoixDuMonopoly()
+
+        newDataMonopoly = dataMonopoly.getAllDataMonopoly()[4] # selectionne le Monopoly printemps des sciences
+
+        # newDataMonopoly = self.__displayChoixDuMonopoly()
 
         # Si on ne chosi aucun Monopoly
         if(newDataMonopoly == None and self._selectedDataMonopoly == None):
@@ -157,8 +161,9 @@ class FenetrePrincipal(scrollTk):
         Permet de choisir les paramètres qui seront utilisé pour modéliser le Monopoly
     """
     def __choixParametres(self, event = None):
-        self._choixParametres = Parametres(self._selectedDataMonopoly)
-        self.wait_window(self._choixParametres)
+        # self._choixParametres = Parametres(self._selectedDataMonopoly)
+        self._choixParametres = Parametres_2(self._selectedDataMonopoly)
+        # self.wait_window(self._choixParametres)
         if(self._selectedDataMonopoly != None):
             self.__refrechMonopolyData()
 
@@ -171,6 +176,12 @@ class FenetrePrincipal(scrollTk):
         nbrMaxTourPrison = self._choixParametres.getNbrTourMaxPrison()
         probSortirPrison = self._choixParametres.getProbPayerSortirPrison()
         nbrDeDoublePrison = self._choixParametres.getNbrDeDoublePrison()
+        print((nbrDes,nbrMaxTourPrison,probSortirPrison,nbrDeDoublePrison))
+
+        # nbrDes = 0
+        # nbrMaxTourPrison = 2
+        # probSortirPrison = 0.5
+        # nbrDeDoublePrison = 2
 
         if(DEBUG):
             print("[DEBUG] Paramètres: nombre de dés: " + str(nbrDes))
