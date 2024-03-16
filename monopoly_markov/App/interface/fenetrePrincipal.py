@@ -148,12 +148,12 @@ class FenetrePrincipal(scrollTk):
 
             # Si même après avoir attendu on a toujours un Monopoly vide
             if(selectedDataMonopoly == None):
-                print("[WARNING] Aucun Monopoly n'a été choisi.")
+                #print("[WARNING] Aucun Monopoly n'a été choisi.")
                 return None
 
         if(DEBUG):
-            print("[DEBUG] Monopoly sélectionné: " + selectedDataMonopoly.getNom())
-
+            #print("[DEBUG] Monopoly sélectionné: " + selectedDataMonopoly.getNom())
+            ...
         return selectedDataMonopoly
 
 
@@ -176,7 +176,7 @@ class FenetrePrincipal(scrollTk):
         nbrMaxTourPrison = self._choixParametres.getNbrTourMaxPrison()
         probSortirPrison = self._choixParametres.getProbPayerSortirPrison()
         nbrDeDoublePrison = self._choixParametres.getNbrDeDoublePrison()
-        print((nbrDes,nbrMaxTourPrison,probSortirPrison,nbrDeDoublePrison))
+        #print((nbrDes,nbrMaxTourPrison,probSortirPrison,nbrDeDoublePrison))
 
         # nbrDes = 0
         # nbrMaxTourPrison = 2
@@ -184,13 +184,13 @@ class FenetrePrincipal(scrollTk):
         # nbrDeDoublePrison = 2
 
         if(DEBUG):
-            print("[DEBUG] Paramètres: nombre de dés: " + str(nbrDes))
-            print("[DEBUG] Paramètres: nombre max de tour en prison: " + str(nbrMaxTourPrison))
-            print("[DEBUG] Paramètres: probabilité de payer pour sortir de prison: " + \
-                str(probSortirPrison))
-            print("[DEBUG] Paramètres: nombre de double avant d'aller en prison: " + \
-                str(nbrDeDoublePrison))
-
+            #print("[DEBUG] Paramètres: nombre de dés: " + str(nbrDes))
+            #print("[DEBUG] Paramètres: nombre max de tour en prison: " + str(nbrMaxTourPrison))
+            #print("[DEBUG] Paramètres: probabilité de payer pour sortir de prison: " + \
+            #    str(probSortirPrison))
+            #print("[DEBUG] Paramètres: nombre de double avant d'aller en prison: " + \
+            #    str(nbrDeDoublePrison))
+            ...
         if(nbrDes != None):
             self._selectedDataMonopoly.setNbrDeDes(nbrDes)
         if(nbrMaxTourPrison != None):
@@ -214,12 +214,12 @@ class FenetrePrincipal(scrollTk):
         if(pointFixe):
             newData = self._selectedMonopoly.simulerInfini()
             if(DEBUG):
-                print("[DEBUG] Simulation des points fixe")
-
+                #print("[DEBUG] Simulation des points fixe")
+                ...
         else:
             if(DEBUG):
-                print("[DEBUG] Simulation de " + str(nbrTour))
-
+                #print("[DEBUG] Simulation de " + str(nbrTour))
+                ...
             newData = self._selectedMonopoly.simulerDesTours(nbrTour)
             newData = self._selectedMonopoly.getResultatSimulation()
 

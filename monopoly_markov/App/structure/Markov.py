@@ -76,9 +76,9 @@ class Markov:
         matriceTravail = deepcopy(matriceDeplacement)
 
         if(nbrLigne != nbrColonne):
-            print("[WARNING] Le nombre de ligne n'est pas le même que le nombre de colonne " \
-                    "(" + nbrLigne + ", " + nbrColonne + ")")
-
+            #print("[WARNING] Le nombre de ligne n'est pas le même que le nombre de colonne " \
+            #        "(" + nbrLigne + ", " + nbrColonne + ")")
+            pass
         matriceUnite = np.eye(nbrLigne)
         matriceTravail = matriceTravail - matriceUnite
 

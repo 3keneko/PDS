@@ -78,7 +78,7 @@ class ChoixMonopoly(tk.Toplevel):
             indexSelect = self._liste.curselection()[0]
 
             self._selectedMonopoly = self._listMonopolyDisponible[indexSelect]
-            print("Monopoly choisi: " + str(self._selectedMonopoly))
+            #print("Monopoly choisi: " + str(self._selectedMonopoly))
             self.__closeChoixMonopoly()
 
 

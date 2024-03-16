@@ -159,8 +159,8 @@ class Parametres(tk.Toplevel):
         nbrDeDes = int(self._entryNbrDeDes.get())
         # Le nombre de dés doit être strictement suppérieur à 0
         if(nbrDeDes <= 0):
-            print("[WARNING] Le nombre de dé doit toujours être strictement suppérieur à 0 " \
-                "(actuellement: " + str(nbrDeDes) + ")")
+            #print("[WARNING] Le nombre de dé doit toujours être strictement suppérieur à 0 " \
+            #    "(actuellement: " + str(nbrDeDes) + ")")
             nbrDeDes = 1
 
         return  nbrDeDes
@@ -175,9 +175,9 @@ class Parametres(tk.Toplevel):
     def getNbrTourMaxPrison(self):
         nbrDeTour = int(self._entryNbrTourPrison.get())
         if(nbrDeTour < 0):
-            print("[WARNING] Le nombre de tour passé en prison doit toujours être positif " \
-                "(actuellement: " + str(nbrDeTour) + ")")
-
+            #print("[WARNING] Le nombre de tour passé en prison doit toujours être positif " \
+            #    "(actuellement: " + str(nbrDeTour) + ")")
+            ...
         return nbrDeTour
 
 
@@ -193,13 +193,13 @@ class Parametres(tk.Toplevel):
         probabilite = float(self._entryProbPayerSortirPrison.get())
         # La probabilité doit être comprise entre 0 et 1
         if(probabilite < 0):
-            print("[WARNING] La probabilité doit toujours être suppérieure ou égale à 0 " \
-                "(actuellement: " + str(probabilite) + " (mis automatiquement à 0))")
+            #print("[WARNING] La probabilité doit toujours être suppérieure ou égale à 0 " \
+            #    "(actuellement: " + str(probabilite) + " (mis automatiquement à 0))")
             probabilite = 0
 
         elif(probabilite > 1):
-            print("[WARNING] La probabilité doit toujours être inférieur ou égale à 1 " \
-                "(actuellement: " + str(probabilite) + " (mis automatiquement à 1))")
+            #print("[WARNING] La probabilité doit toujours être inférieur ou égale à 1 " \
+            #    "(actuellement: " + str(probabilite) + " (mis automatiquement à 1))")
             probabilite = 1
 
         return probabilite
@@ -215,8 +215,8 @@ class Parametres(tk.Toplevel):
     def getNbrDeDoublePrison(self):
         nbrDeDouble = int(self._entryNbrDeDoublePrison.get())
         if(nbrDeDouble < 0):
-            print("[WARNING] Le nombre de double pour aller en prison doit toujours être positif " \
-                "(0 pour désactiver) (actuellement: " + str(nbrDeDouble) + ")")
+            #print("[WARNING] Le nombre de double pour aller en prison doit toujours être positif " \
+            #    "(0 pour désactiver) (actuellement: " + str(nbrDeDouble) + ")")
             nbrDeDouble = 0
 
         return nbrDeDouble
